@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="item-nav-top"id="logo">
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <div class="item-nav-top" id="menu-drop">All Categories
+          <ul class="item-nav-top-drop">
+            <li>Appliances</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Sport</li>
+            <li>Accecoris</li>
+            <li>Fashion</li>
+            <li>Pages</li>
+            <li>Todays'Deals</li>
+          </ul>
+      </div>
+      <div class="item-nav-top" class="search-nav">
+        <input class="nav-search "type="text" placeholder="search...">
+        <div class="fa fa-search"></div>
+
+        </div>
+        <div class="fa fa-shopping-cart"></div>
+      </div>
+
+    </div>
+    <div class="container row-menu">
+      <ul class="row-menu-text">
+        <li>Appliances</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Sport</li>
+        <li>Accecoris</li>
+        <li>Fashion</li>
+        <li>Pages</li>
+        <li>Todays'Deals</li>
+      </ul>
+
+    </div>
+
+  </nav>
+<div class="wrap-content-back">
+  <div class="wrap-content">
+    <section class="left-content">
+      <div class="left-content-item">
+        <h2>CATEGORIES</h2>
+        <ul>
+          <li>Accessories</li>
+          <li>Featured Brands</li>
+          <li>Baby Food</li>
+          <li>Breads and Bakery</li>
+          <li>Sunglasses</li>
+          <li>Poultry & Meat</li>
+        </ul>
+      </div>
+      <div class="left-content-item">
+        <h2>BEST SELLERS</h2>
+        <ul>
+          <li class="container">
+            <div class="best-seller-text">
+              <p>
+                <a href="#">Sleeveless Top M</a>
+              </p>
+              <p>Rp, 400</p>
+              <p>Fav</p>
+            </div>
+            <img src="img/product57_9060a29f-6290-4a98-81e9-baf6cb790e19_small.jpg" alt="baju tak lengan">
+
+
+          </li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="left-content-item">        <h2>CATEGORIES</h2>
+              <ul>
+                <li>Accessories</li>
+                <li>Featured Brands</li>
+                <li>Baby Food</li>
+                <li>Breads and Bakery</li>
+                <li>Sunglasses</li>
+                <li>Poultry & Meat</li>
+              </ul>
+            </div>
+      <div class="left-content-item">
+        <h2>CATEGORIES</h2>
+        <ul>
+          <li>Accessories</li>
+          <li>Featured Brands</li>
+          <li>Baby Food</li>
+          <li>Breads and Bakery</li>
+          <li>Sunglasses</li>
+          <li>Poultry & Meat</li>
+        </ul>
+      </div>
+      <div class="left-content-item">
+        <h2>CATEGORIES</h2>
+        <ul>
+          <li>Accessories</li>
+          <li>Featured Brands</li>
+          <li>Baby Food</li>
+          <li>Breads and Bakery</li>
+          <li>Sunglasses</li>
+          <li>Poultry & Meat</li>
+        </ul>
+      </div>
+      <div class="left-content-item"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <section class="right-content">
+      <div>
+        <img name="slides" src="img/slider2.jpg" width="800px" alt="">
+        <img src="img/slider4.jpg" width="800px" alt="">
+        <img src="img/slider2.jpg" width="800px" alt="">
+      </div>
+    </section>
+  </div>
+</div>
+<img name="slides" src="slider1.jpg" width="800px" alt="">
+<img name="slides" src="slider4.jpg" width="800px" alt="">
+<img name="slides" src="slider2.jpg" width="800px" alt="">
+
+<script>
+  var i = 0;
+  var images = [];
+  var time = 3000;
+
+  images[0] = 'slider1.jpg';
+  images[1] = 'slider4.jpg';
+  images[2] = 'slider2.jpg';
+
+  function chgImg() {
+    document.body.slides.src = images[i];
+    if (i < images.length - 1) {
+      i++;
+    } else {
+      i = 0;
+    }
+    setTimeout("chgImg()", time);
+  }
+  window.onload = chgImg;
+</script>
+</body>
+</html>
